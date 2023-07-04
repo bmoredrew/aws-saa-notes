@@ -21,3 +21,11 @@
 * The default VPC has access to features such as the _Internet Gateway_ (IGW), _Security Groups_ (SGs), and _Network Access Control Lists_ (NACLs).
 
 * It is best practice not to use the default VPC for production apps.
+
+## VPC CIDR Sizing
+
+- Default is always /16 subnet (subnetwork)
+- Each AZ (Availability Zone) in the region is /20 subnet
+- Higher slash CIDR the smaller the network is
+- /17 is half size of a /16 - two /17 will fit into one /16
+- 16, /20's can fit into one /16 VPC
