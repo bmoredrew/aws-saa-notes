@@ -6,7 +6,7 @@ It is an _Infrastructure as a Service_ (IaaS) that provides scalable computing p
 
 EC2 is a service that's by default and one that uses VPC networking.
 
-EC2 is AZ resilient, meaning our EC2 instance is likely to fail if the AZ its located in fails.
+EC2 is **AZ resilient**, meaning our EC2 instance is likely to fail if the AZ its located in fails.
 
 EC2 offers temporary data storage inside of _instance store volumes_ as well as persistent storage volumes using _Amazon Elastic Block Store_ (Amazon EBS).
 
@@ -19,6 +19,11 @@ A running instance will utilize all four of these and thus generate costs more q
 Stopped instances are less useful, but they are significantly cheaper as the only resource they use is the disk.
 
 Terminated instances are the only state in the EC2 instance lifecycle that generate no charges.
+
+### Billing:
+- Running instance: CPU, Memory, Disk, Networking.
+- Stopped instance: Disk
+- Terminated instnace: None (non-reversible)
 
 ## Amazon Machine Images (AMIs)
 
